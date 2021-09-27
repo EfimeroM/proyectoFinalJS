@@ -1,0 +1,49 @@
+@mixin form {
+    .cuerpo{
+        @include buttonBack;
+    }
+    h2{
+        padding-top: $sizePadding;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 80%;
+            margin-top: $sizePadding/2;
+        }
+        #botones{
+            display: flex;
+            width: 50%;
+            .buttonLogin{
+                @include button;
+            }
+        }
+    }
+    .autenticar{
+        p{
+            padding-top: $sizePadding/2;
+        }
+        #cajaAutenticar{
+            img{
+                width: $sizeIcon*2;
+                margin-right: $sizePadding/2;
+            }
+        }
+        a{
+            .registrate{
+                display: flex;
+                justify-content: center;
+                border: 1px solid black;
+                border-radius: 2px;
+                width: 60%;
+                img{
+                    width: $sizeIcon*4;
+                }
+                p{
+                    color: $themeTextColor;
+                }
+            }
+        }
+    }
+}

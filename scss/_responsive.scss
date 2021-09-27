@@ -1,0 +1,379 @@
+//Mobile y Tablet
+@media(max-width: 350px){
+    #cabecera{
+        width: $sizeImageTW;
+        height: $sizeImageH/2.8;
+    }
+    main{
+        #cajaDonacion{
+            padding: $sizePadding 0;
+            h3{
+                font-weight: bold;
+                padding: $sizePadding/2 0;
+            }
+            h4{
+                padding: $sizePadding/3 0;
+                img{
+                    width: $sizeIcon;
+                }
+            }
+        }
+    }
+    footer{
+        #administrar{
+            padding: $sizePadding/3;
+        }
+    }
+}
+@media(max-width: 400px){
+    #cabecera{
+        width: $sizeImageTW;
+        height: $sizeImageH/3.2;
+        #tituloCabecera{
+            padding-top: $sizeImageH/4.5;
+        }
+    }
+}
+@media(max-width: 425px){
+    #cabecera{
+        width: $sizeImageTW;
+        height: $sizeImageH/3;
+    }
+}
+@media(max-width: 599px){
+    #cabecera{
+        width: $sizeImageTW;
+        height: $sizeImageH/3.2;
+    }
+    main{
+        #descripcionVaetics{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe{
+                width: 90%;
+                height: 50vw;
+            }
+        }
+    }
+}
+@media(min-width: 600px){
+    #cabecera{
+        width: $sizeImageTW;
+        height: $sizeImageTH/1.2;
+    }  
+    main{
+        #trending{
+            article{
+                .curiosidadesTrending{
+                    p{
+                        font-size: $sizeText*1.5;
+                    }
+                }
+            }
+        }
+        #contenidoCurio{
+            padding-bottom: $sizePadding;
+            a{
+                .cajaCurio{
+                    p{
+                        font-size: $sizeText*1.5;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #cuerpoCurio{
+            .imgCuriosidadDesktop{
+                display: block;
+            }
+            .imgCuriosidadMobile{
+                display: none;
+            }
+            p{
+                font-size: $sizeText*1.5;
+            }
+        }
+        #patreon{
+            article{
+                p{
+                    font-size: $sizeText*1.5;
+                }
+            }
+        }
+    }
+    #pblcd{
+        #Pblcd{
+        height: 150px;
+        width: 150px;
+        }
+    }
+    footer{
+        #suscribirse{
+            #cajaSuscribirse{
+                form{
+                    #mail{
+                        font-size: $sizeText*1.5;
+                        width: 300px;
+                    }
+                    #submit{
+                        width: 140px;
+                        font-size: $sizeText*1.5;
+                    }
+                }
+            }
+        }
+        #administrar{
+            padding: $sizePadding $sizePadding/2;
+            h3{
+                font-size: $sizeText*1.5;
+            }
+        }
+    }
+}
+@media(min-width: 800px){
+    #cabecera{
+        background-image: url('../img/fondos/desktop/cabecera.jpg');
+    }
+    main{
+        #contenidoCurio{
+            a{
+                .cajaCurio{
+                    img{
+                        width: $sizeImageW/4;
+                        height: $sizeImageH/6;
+                    }
+                }
+            }
+        }
+    }    
+}
+//Desktop
+@media(min-width: 1024px) {
+/*nombrando grids*/
+header{ grid-area: cabecera; }
+main{ grid-area: contenido; }
+#pblcd{ grid-area: pblcd; align-content: center; align-items: center; justify-content: center;}
+footer{ grid-area: pie;}
+    body{
+        /*estructura grid*/
+        display: grid;
+        grid-template-areas:
+        "cabecera cabecera"
+        "contenido pblcd"
+        "pie pie"
+        ;
+        grid-template-columns: 85% 15%;
+        flex-direction: none;
+        #cabecera{
+            width: $sizeImageTW;
+            height: 300px;
+            #tituloCabecera{
+                padding-top: $sizePadding*4.8;
+                h1{
+                    box-shadow: none;
+                    background-color: rgba(0,0,0,0.65);
+                    box-shadow: -1px -13px 79px 52px rgba(0,0,0,0.7);
+                    -webkit-box-shadow: -1px -13px 79px 52px rgba(0,0,0,0.7);
+                    -moz-box-shadow: -1px -13px 79px 52px rgba(0,0,0,0.7);
+                } 
+            }
+        }
+        main{
+            #trending{
+                article{
+                    .curiosidadesTrending{
+                        display: flex;
+                        align-items:center;
+                        padding-top: $sizePadding/2;
+                        iframe{
+                            width: 45%;
+                            height: 25vw;
+                        }
+                        p{
+                            width: 55%;
+                            font-size: $sizeText*1.2;
+                            padding: $sizePadding/2;
+                        }
+                    }
+                }
+            }
+            #patreon{
+                article{
+                    p{
+                        font-size: $sizeText*1.3;
+                        padding-top: $sizePadding/4;
+                    }
+                }
+            }
+            #contenidoCurio{
+                padding-bottom: $sizePadding;
+                a{
+                    .cajaCurio{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        border: 1px solid gray;
+                        margin-top: $sizePadding/2;
+                        img{
+                            width: $sizeImageW/5;
+                            height: $sizeImageH/5;
+                        }
+                        p{
+                            width: 90%;
+                            padding-left: $sizePadding/1.5;
+                        }
+                    }
+                }
+            }
+            #cuerpoCurio{
+                img{
+                    width: $sizeImageTW/1.5;
+                    height: $sizeImageTH/1.5;
+                }
+            }
+            //sobre nosotros
+            #descripcionVaetics{
+                padding-top: $sizePadding;
+                padding-bottom: $sizePadding;
+                h4{
+                    padding-top: $sizePadding/2;
+                }
+            }
+            /*Donaciones*/
+            #cajaDonacion{
+                h4{
+                    img{
+                        width: $sizeIcon*2.3;
+                    }
+                }
+                #botonDonacion{
+                    h4{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+        #pblcd{
+            margin-top: $sizePadding/2;
+            height: $sizeImageTH;
+            width: auto;
+        }
+        footer{
+            #suscribirse{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                #cajaSuscribirse{
+                    form{
+                        #mail{
+                            font-size: $sizeText*1.2;
+                            width: 400px;
+                        }
+                        #submit{
+                            width: 100px;
+                            font-size: $sizeText*1.1;
+                            margin-top: $sizePadding/6;
+                        }
+                    }
+                }
+                .logoVaetics{
+                    width: $sizeIcon*3;
+                }
+            }
+            #administrar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                padding: $sizePadding/4;
+                h3{
+                    font-size: $sizeText/1.1;
+                    padding: $sizePadding/3;
+                }
+            }
+        }
+    }
+    #bodyLogin{
+        #formulario{
+            #login{
+                border-right: 1px solid black;
+            }
+            #registro{
+                border-right: 1px solid black;
+            }
+            #portadaLogin{
+                display: block;    
+                background: black;
+                width: 75%;
+                height: 100%;
+                img{
+                    height: 100vh;
+                    opacity: 70%;
+                }
+            }
+        }
+    }    
+}
+@media(min-width: 1440px){
+    body{
+        main{
+            //index
+            #trending{
+                article{
+                    .curiosidadesTrending{
+                        p{
+                            font-size: $sizeText*1.5;
+                        }
+                    }
+                }
+            }
+            #patreon{
+                article{
+                    p{
+                        font-size: $sizeText*1.5;
+                    }
+                }
+            }           
+        }
+        footer{
+            #suscribirse{
+                #cajaSuscribirse{
+                    form{
+                        #mail{
+                            font-size: $sizeText*1.4;
+                            width: 430px;
+                        }
+                        #submit{
+                            width: 110px;
+                            font-size: $sizeText*1.3;
+                        }
+                    }
+                }
+                .logoVaetics{
+                    width: $sizeIcon*4;
+                }
+            }
+            #administrar{
+                h3{
+                    font-size: $sizeText;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 1600px){
+    body{
+        main{
+            #contenidoCurio{
+                a{
+                    .cajaCurio{
+                        img{
+                            height: $sizeImageH/4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

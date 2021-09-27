@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Fuentes de Google -->
+  <link rel = "preconnect" href = "https://fonts.googleapis.com">
+  <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+  <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel = "stylesheet"> 
+	<!-- Boostrap -->
+  <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin = "anonymous">
+  <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin = "anonymous"></script>
+  <link rel = "stylesheet" href = "css/main.css">
+  <title>Index Vaetics</title>
+</head>
+<body>
+	<header>
+    <div id = "cabecera">
+      <div id = "tituloCabecera">
+        <h1> Bienvenido a Vaetics </h1>
+      </div>
+    </div>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+      <div class = "container-fluid">
+        <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
+          <span class = "navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+          <ul class = "navbar-nav me-auto mb-2 mb-lg-0">
+            <li class = "nav-item">
+              <a class = "nav-link active" aria-current = "page" href = "">Inicio</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" href = "secciones/curiosidades.html">Curiosidades</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" aria-current = "page" href = "secciones/guardado.html">Guardado</a>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link" aria-current = "page" href = "secciones/sobreNosotros.html">Sobre Nosotros/Contacto</a>
+            </li>
+            <li class = "nav-item dropdown">
+              <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" role = "button" data-bs-toggle = "dropdown" aria-expanded = "false">
+                Iniciar Sesión
+              </a>
+              <ul class = "dropdown-menu" aria-labelledby = "navbarDropdown">
+                <li><a class = "dropdown-item" href = "secciones/login.html">Registrarse</a></li>
+                <li><a class = "dropdown-item" href = "secciones/login.html">Iniciar Sesión</a></li>
+              </ul>
+            </li>
+            <li class = "nav-item">
+              <a class = "nav-link disabled" href = "#" tabindex = "-1" aria-disabled = "true">Vaetics</a>
+            </li>
+          </ul>
+        </div>
+      </div>        
+    </nav>
+  </header>
+  <main>
+    <section id = "trending">
+        <div class = "cabeceraIcon">
+            <img src = "img/iconos/index/punto.svg" alt = "punto rojo">
+            <h2>Trending live</h2>
+        </div>           
+        <article>
+            <div class = "curiosidadesTrending">
+                <iframe src = "https://www.youtube.com/embed/yS1ibDImAYU" title = "El fin del espacio - Creando una prisión para la humanidad" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>El viaje espacial es la aventura más emocionante para la humanidad, pero en una ironía de la historia podemos detenernos de ir al espacio cuanto más lo hagamos. Con cada cohete lanzado estamos creando una trampa mortal para la humanidad</p>
+            </div>
+            <div class = "curiosidadesTrending">
+                <iframe src = "https://www.youtube.com/embed/EhAemz1v7dQ" title = "¿Necesitamos energía nuclear para detener el cambio climático?" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>¿Necesitamos energía nuclear para detener el cambio climático? Cada vez más voces de la ciencia, los activistas ambientales y la prensa lo han dicho en los últimos años, pero esto es un shock para quienes luchan contra la energía nuclear y los problemas que la acompañan. Entonces, ¿quién tiene razón? Bueno, es complicado.</p>
+            </div>    
+            <div class = "curiosidadesTrending">
+                <iframe src = "https://www.youtube.com/embed/PaErPyEnDvk" title = "¿Qué se esconde en el lugar más solitario de la Tierra? El Océano Profundo" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>A veces el mundo se siente aburrido. Todas las islas remotas han sido visitadas, el Ártico ha sido conquistado, las junglas más densas descubiertas. Pero aún hay un lugar para explorar: un desierto húmedo y letal donde criaturas misteriosas viven en completa oscuridad: El Océano Profundo. Sumerjámonos.</p>
+            </div>
+        </article>
+    </section>
+    <section id = "patreon">
+        <div class = "cabeceraIcon">
+            <img src = "img/iconos/index/patreon.svg" alt = "logo patreon">
+            <h2>Ayúdanos uniéndote a nuestro Patreon</h2>
+        </div>
+        <article>
+            <p>Únete a nuestro Patreon y ayúdanos a financiar nuestros proyectos! No solo nos estarías brindando un muy necesitado apoyo, también obtendrás acceso a todas las secciones exclusivas así como recompensas ¡Actualizamos todas las semanas! Anímate a apoyarnos en <a href = "secciones/donaciones.html">Nuestro Patreon</a>.</p>
+        </article>
+    </section>
+  </main>  
+  <div id = "pblcd">
+    <div id = "imgPblcd"></div>
+  </div>  
+  <footer>
+    <div id = "suscribirse">
+      <img src = "img/logos/vaetics.png" alt = "logo Vaetics" class = "logoVaetics">
+      <div id = "cajaSuscribirse">
+        <form action = "" id="formularioSuscribirse">
+          <input type = "email" placeholder = " ingrese su correo electrónico..." id = "mail" name="emailSuscribirse" required>
+          <input type = "submit" value = "suscribirse" id = "submit">
+        </form>
+      </div>    
+    </div>
+    <div id = "administrar">
+        <a href = "secciones/politicasCookies.html"><h3>políticas de privacidad</h3></a>
+        <a href = "secciones/politicasCookies.html"><h3>gestión de cookies</h3></a>    
+    </div>
+  </footer>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+  <script src = "js/jquery/jquery-3.6.0.min.js"></script>
+  <script src = "js/enviarFormularios.js"></script>
+</body>
+</html>

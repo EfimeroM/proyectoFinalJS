@@ -1,0 +1,558 @@
+/*Variables color*/
+/*size*/
+/*Ajuste general*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+a {
+  text-decoration: none;
+  color: #1d1c1c; }
+
+.cabeceraIcon {
+  display: flex;
+  padding-top: 50px; }
+  .cabeceraIcon img {
+    width: 15px; }
+  .cabeceraIcon h2 {
+    margin-left: 1%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+header {
+  display: flex;
+  flex-direction: column; }
+
+#cabecera {
+  width: 100%;
+  height: 25vh;
+  background-image: url("../img/fondos/cabecera.jpg");
+  background-position: center;
+  background-size: 170%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: white; }
+  #cabecera #tituloCabecera {
+    padding-top: 25vh; }
+    #cabecera #tituloCabecera h1 {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      vertical-align: text-bottom;
+      box-shadow: 2px -1px 56px 22px black;
+      -webkit-box-shadow: 2px -1px 56px 22px black;
+      -moz-box-shadow: 2px -1px 56px 22px black; }
+
+main {
+  width: 95%;
+  margin-left: 2.5%;
+  /*Donaciones*/ }
+  main #trending article .curiosidadesTrending {
+    padding-top: 25px; }
+    main #trending article .curiosidadesTrending iframe {
+      width: 100%;
+      height: 50vw; }
+    main #trending article .curiosidadesTrending p {
+      font-size: 15px;
+      padding-top: 12.5px; }
+  main #patreon {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    main #patreon article p {
+      padding-top: 12.5px; }
+      main #patreon article p a {
+        color: #EA0070;
+        border-bottom: 1px solid #EA0070; }
+  main #contenidoCurio {
+    padding-bottom: 50px; }
+    main #contenidoCurio a {
+      color: #1d1c1c; }
+      main #contenidoCurio a .cajaCurio {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid gray;
+        margin-top: 25px;
+        -webkit-box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 22px -4px rgba(0, 0, 0, 0.75); }
+        main #contenidoCurio a .cajaCurio img {
+          width: 33.33333vw;
+          height: 16.66667vh; }
+        main #contenidoCurio a .cajaCurio p {
+          width: 67%;
+          padding-left: 8.33333px; }
+      main #contenidoCurio a .cajaCurio:hover {
+        transform: scale(1.02, 1.02);
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: 1px solid black;
+        -webkit-box-shadow: 10px 10px 22px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 22px -15px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 22px -15px rgba(0, 0, 0, 0.75); }
+  main #errorAuten {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    main #errorAuten .buttonAuten {
+      display: flex;
+      padding-top: 16.66667px; }
+      main #errorAuten .buttonAuten .buttonLogin {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 12.5px;
+        margin-right: 6.25px; }
+  main #descripcionVaetics {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    main #descripcionVaetics h4 {
+      padding-top: 25px; }
+    main #descripcionVaetics iframe {
+      width: 70%;
+      height: 30vw; }
+  main #contacto {
+    padding-bottom: 50px; }
+    main #contacto form .buttonContacto {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 12.5px;
+      margin-right: 6.25px; }
+  main #cabeceraPaginaCuriosidades {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px; }
+    main #cabeceraPaginaCuriosidades a img {
+      width: 60px;
+      padding: 8.33333px 25px 8.33333px 0; }
+    main #cabeceraPaginaCuriosidades h2 {
+      padding-top: 12.5px;
+      margin-left: 1%; }
+  main #piePaginaCuriosidades a img {
+    width: 60px;
+    padding: 8.33333px 25px 8.33333px 0; }
+  main #cuerpoCurio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px; }
+    main #cuerpoCurio .imgCuriosidadDesktop {
+      display: none; }
+    main #cuerpoCurio .imgCuriosidadMobile {
+      display: block; }
+    main #cuerpoCurio img {
+      width: 100%;
+      height: 100%; }
+    main #cuerpoCurio p {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+  main #cajaDonacion {
+    padding: 50px 0; }
+    main #cajaDonacion h3 {
+      font-weight: bold;
+      padding: 25px 0; }
+    main #cajaDonacion h4 {
+      padding: 16.66667px 0; }
+      main #cajaDonacion h4 img {
+        width: 15px; }
+      main #cajaDonacion h4 a {
+        color: #EA0070;
+        border-bottom: 1px solid #EA0070; }
+    main #cajaDonacion #botonDonacion {
+      padding-top: 50px; }
+      main #cajaDonacion #botonDonacion #contenedorBoton img {
+        width: 40px; }
+      main #cajaDonacion #botonDonacion #contenedorBoton a {
+        text-decoration: none;
+        color: black;
+        padding: 20px 25px;
+        border: 1px solid black;
+        border-radius: 100px; }
+      main #cajaDonacion #botonDonacion #contenedorBoton a:hover {
+        padding: 20px 30px 20px 90px;
+        transition-duration: 0.4s; }
+      main #cajaDonacion #botonDonacion h4 {
+        padding: 20px;
+        width: 98%;
+        border: 1px solid black;
+        border-radius: 10px; }
+        main #cajaDonacion #botonDonacion h4 img {
+          width: 40px; }
+      main #cajaDonacion #botonDonacion h5 {
+        font-size: 14px; }
+  main #formularioDonacion {
+    display: none; }
+    main #formularioDonacion div .imagenAyuda {
+      display: none;
+      width: 350px; }
+
+#bodyLogin {
+  display: flex; }
+  #bodyLogin #formulario {
+    display: flex;
+    height: 100%; }
+    #bodyLogin #formulario #login {
+      min-width: 370px;
+      height: 100%;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column; }
+      #bodyLogin #formulario #login .cuerpo a img {
+        width: 45px;
+        padding: 7.14286px;
+        padding-left: none; }
+      #bodyLogin #formulario #login h2 {
+        padding-top: 50px; }
+      #bodyLogin #formulario #login form {
+        display: flex;
+        flex-direction: column; }
+        #bodyLogin #formulario #login form input {
+          width: 80%;
+          margin-top: 25px; }
+        #bodyLogin #formulario #login form #botones {
+          display: flex;
+          width: 50%; }
+          #bodyLogin #formulario #login form #botones .buttonLogin {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 12.5px;
+            margin-right: 6.25px; }
+      #bodyLogin #formulario #login .autenticar p {
+        padding-top: 25px; }
+      #bodyLogin #formulario #login .autenticar #cajaAutenticar img {
+        width: 30px;
+        margin-right: 25px; }
+      #bodyLogin #formulario #login .autenticar a .registrate {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 60%; }
+        #bodyLogin #formulario #login .autenticar a .registrate img {
+          width: 60px; }
+        #bodyLogin #formulario #login .autenticar a .registrate p {
+          color: #1d1c1c; }
+    #bodyLogin #formulario #registro {
+      min-width: 370px;
+      height: 100%;
+      padding-left: 10px;
+      display: none; }
+      #bodyLogin #formulario #registro .cuerpo a img {
+        width: 45px;
+        padding: 7.14286px;
+        padding-left: none; }
+      #bodyLogin #formulario #registro h2 {
+        padding-top: 50px; }
+      #bodyLogin #formulario #registro form {
+        display: flex;
+        flex-direction: column; }
+        #bodyLogin #formulario #registro form input {
+          width: 80%;
+          margin-top: 25px; }
+        #bodyLogin #formulario #registro form #botones {
+          display: flex;
+          width: 50%; }
+          #bodyLogin #formulario #registro form #botones .buttonLogin {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 12.5px;
+            margin-right: 6.25px; }
+      #bodyLogin #formulario #registro .autenticar p {
+        padding-top: 25px; }
+      #bodyLogin #formulario #registro .autenticar #cajaAutenticar img {
+        width: 30px;
+        margin-right: 25px; }
+      #bodyLogin #formulario #registro .autenticar a .registrate {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 2px;
+        width: 60%; }
+        #bodyLogin #formulario #registro .autenticar a .registrate img {
+          width: 60px; }
+        #bodyLogin #formulario #registro .autenticar a .registrate p {
+          color: #1d1c1c; }
+    #bodyLogin #formulario #portadaLogin {
+      display: none; }
+
+#pblcd {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #131313; }
+  #pblcd #imgPblcd {
+    background-image: url("../img/pblcd.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100px;
+    width: 100px; }
+
+footer {
+  border-top: 1px solid black;
+  margin-top: 50px;
+  display: flex;
+  color: #1d1c1c;
+  background-color: white; }
+  footer #suscribirse {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-top: 25px;
+    padding-bottom: 12.5px; }
+    footer #suscribirse #cajaSuscribirse {
+      padding: 8.33333px; }
+      footer #suscribirse #cajaSuscribirse form {
+        display: flex;
+        flex-direction: column; }
+        footer #suscribirse #cajaSuscribirse form ::placeholder {
+          color: #d4d3c9; }
+        footer #suscribirse #cajaSuscribirse form #mail {
+          color: #1d1c1c;
+          background-color: white;
+          border: 1px solid black;
+          width: 200px; }
+        footer #suscribirse #cajaSuscribirse form #submit {
+          color: #1d1c1c;
+          background-color: white;
+          border: 1px solid black;
+          width: 100px;
+          margin-top: 8.33333px; }
+    footer #suscribirse .logoVaetics {
+      width: 60px; }
+  footer #administrar {
+    width: 30%;
+    padding: 12.5px; }
+    footer #administrar a {
+      color: #1d1c1c;
+      padding: 10px;
+      text-align: center; }
+    footer #administrar h3 {
+      border-radius: 10px;
+      font-size: 15px;
+      margin-top: 16.66667px; }
+    footer #administrar h3:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+
+@media (max-width: 350px) {
+  #cabecera {
+    width: 100%;
+    height: 35.71429vh; }
+  main #cajaDonacion {
+    padding: 50px 0; }
+    main #cajaDonacion h3 {
+      font-weight: bold;
+      padding: 25px 0; }
+    main #cajaDonacion h4 {
+      padding: 16.66667px 0; }
+      main #cajaDonacion h4 img {
+        width: 15px; }
+  footer #administrar {
+    padding: 16.66667px; } }
+
+@media (max-width: 400px) {
+  #cabecera {
+    width: 100%;
+    height: 31.25vh; }
+    #cabecera #tituloCabecera {
+      padding-top: 22.22222vh; } }
+
+@media (max-width: 425px) {
+  #cabecera {
+    width: 100%;
+    height: 33.33333vh; } }
+
+@media (max-width: 599px) {
+  #cabecera {
+    width: 100%;
+    height: 31.25vh; }
+  main #descripcionVaetics {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main #descripcionVaetics iframe {
+      width: 90%;
+      height: 50vw; } }
+
+@media (min-width: 600px) {
+  #cabecera {
+    width: 100%;
+    height: 83.33333%; }
+  main #trending article .curiosidadesTrending p {
+    font-size: 22.5px; }
+  main #contenidoCurio {
+    padding-bottom: 50px; }
+    main #contenidoCurio a .cajaCurio p {
+      font-size: 22.5px;
+      width: 100%; }
+  main #cuerpoCurio .imgCuriosidadDesktop {
+    display: block; }
+  main #cuerpoCurio .imgCuriosidadMobile {
+    display: none; }
+  main #cuerpoCurio p {
+    font-size: 22.5px; }
+  main #patreon article p {
+    font-size: 22.5px; }
+  #pblcd #Pblcd {
+    height: 150px;
+    width: 150px; }
+  footer #suscribirse #cajaSuscribirse form #mail {
+    font-size: 22.5px;
+    width: 300px; }
+  footer #suscribirse #cajaSuscribirse form #submit {
+    width: 140px;
+    font-size: 22.5px; }
+  footer #administrar {
+    padding: 50px 25px; }
+    footer #administrar h3 {
+      font-size: 22.5px; } }
+
+@media (min-width: 800px) {
+  #cabecera {
+    background-image: url("../img/fondos/desktop/cabecera.jpg"); }
+  main #contenidoCurio a .cajaCurio img {
+    width: 25vw;
+    height: 16.66667vh; } }
+
+@media (min-width: 1024px) {
+  /*nombrando grids*/
+  header {
+    grid-area: cabecera; }
+  main {
+    grid-area: contenido; }
+  #pblcd {
+    grid-area: pblcd;
+    align-content: center;
+    align-items: center;
+    justify-content: center; }
+  footer {
+    grid-area: pie; }
+  body {
+    /*estructura grid*/
+    display: grid;
+    grid-template-areas: "cabecera cabecera" "contenido pblcd" "pie pie";
+    grid-template-columns: 85% 15%;
+    flex-direction: none; }
+    body #cabecera {
+      width: 100%;
+      height: 300px; }
+      body #cabecera #tituloCabecera {
+        padding-top: 240px; }
+        body #cabecera #tituloCabecera h1 {
+          box-shadow: none;
+          background-color: rgba(0, 0, 0, 0.65);
+          box-shadow: -1px -13px 79px 52px rgba(0, 0, 0, 0.7);
+          -webkit-box-shadow: -1px -13px 79px 52px rgba(0, 0, 0, 0.7);
+          -moz-box-shadow: -1px -13px 79px 52px rgba(0, 0, 0, 0.7); }
+    body main {
+      /*Donaciones*/ }
+      body main #trending article .curiosidadesTrending {
+        display: flex;
+        align-items: center;
+        padding-top: 25px; }
+        body main #trending article .curiosidadesTrending iframe {
+          width: 45%;
+          height: 25vw; }
+        body main #trending article .curiosidadesTrending p {
+          width: 55%;
+          font-size: 18px;
+          padding: 25px; }
+      body main #patreon article p {
+        font-size: 19.5px;
+        padding-top: 12.5px; }
+      body main #contenidoCurio {
+        padding-bottom: 50px; }
+        body main #contenidoCurio a .cajaCurio {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          border: 1px solid gray;
+          margin-top: 25px; }
+          body main #contenidoCurio a .cajaCurio img {
+            width: 20vw;
+            height: 20vh; }
+          body main #contenidoCurio a .cajaCurio p {
+            width: 90%;
+            padding-left: 33.33333px; }
+      body main #cuerpoCurio img {
+        width: 66.66667%;
+        height: 66.66667%; }
+      body main #descripcionVaetics {
+        padding-top: 50px;
+        padding-bottom: 50px; }
+        body main #descripcionVaetics h4 {
+          padding-top: 25px; }
+      body main #cajaDonacion h4 img {
+        width: 34.5px; }
+      body main #cajaDonacion #botonDonacion h4 {
+        width: 40%; }
+    body #pblcd {
+      margin-top: 25px;
+      height: 100%;
+      width: auto; }
+    body footer #suscribirse {
+      display: flex;
+      flex-direction: column;
+      width: 70%; }
+      body footer #suscribirse #cajaSuscribirse form #mail {
+        font-size: 18px;
+        width: 400px; }
+      body footer #suscribirse #cajaSuscribirse form #submit {
+        width: 100px;
+        font-size: 16.5px;
+        margin-top: 8.33333px; }
+      body footer #suscribirse .logoVaetics {
+        width: 45px; }
+    body footer #administrar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 12.5px; }
+      body footer #administrar h3 {
+        font-size: 13.63636px;
+        padding: 16.66667px; }
+  #bodyLogin #formulario #login {
+    border-right: 1px solid black; }
+  #bodyLogin #formulario #registro {
+    border-right: 1px solid black; }
+  #bodyLogin #formulario #portadaLogin {
+    display: block;
+    background: black;
+    width: 75%;
+    height: 100%; }
+    #bodyLogin #formulario #portadaLogin img {
+      height: 100vh;
+      opacity: 70%; } }
+
+@media (min-width: 1440px) {
+  body main #trending article .curiosidadesTrending p {
+    font-size: 22.5px; }
+  body main #patreon article p {
+    font-size: 22.5px; }
+  body footer #suscribirse #cajaSuscribirse form #mail {
+    font-size: 21px;
+    width: 430px; }
+  body footer #suscribirse #cajaSuscribirse form #submit {
+    width: 110px;
+    font-size: 19.5px; }
+  body footer #suscribirse .logoVaetics {
+    width: 60px; }
+  body footer #administrar h3 {
+    font-size: 15px; } }
+
+@media (min-width: 1600px) {
+  body main #contenidoCurio a .cajaCurio img {
+    height: 25vh; } }

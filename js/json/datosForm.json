@@ -1,0 +1,48 @@
+[
+    { 
+
+    "inputType": "input",
+
+    "name": "Name"
+
+    },
+
+    {
+
+    "inputType": "select",
+
+    "name": "Monto"   
+
+    },
+
+    {
+
+    "inputType": "input",
+
+    "name": "Tarjeta"   
+
+    },
+
+    {
+
+    "inputType": "input",
+
+    "name": "Caducidad"   
+
+    },
+
+    {
+
+    "inputType": "input",
+
+    "name": "Codigo"   
+    },
+
+    {
+
+    "inputType": "input",
+
+    "name": "Check"   
+    }
+]
+

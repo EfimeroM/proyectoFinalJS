@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Fuentes de Google -->
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel = "stylesheet"> 
+	<!-- Boostrap -->
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin = "anonymous">
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin = "anonymous"></script>
+    <link rel = "stylesheet" href = "../css/main.css">
+   <title>Portal de Donación Vaetics</title>
+</head>
+<body>
+    <header>
+        <div id = "cabecera">
+            <div id = "tituloCabecera">
+                <h1>Donaciones Vaetics</h1>
+            </div>  
+        </div>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <div class = "container-fluid">
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                    <ul class = "navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class = "nav-item">
+                            <a class = "nav-link" aria-current = "page" href = "../index.html">Inicio</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "curiosidades.html">Curiosidades</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" aria-current = "page" href = "guardado.html">Guardado</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" aria-current = "page" href = "sobreNosotros.html">Sobre Nosotros/Contacto</a>
+                        </li>
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" role = "button" data-bs-toggle = "dropdown" aria-expanded = "false">
+                            Iniciar Sesión
+                            </a>
+                            <ul class = "dropdown-menu" aria-labelledby = "navbarDropdown">
+                                <li><a class = "dropdown-item" href = "login.html">Registrarse</a></li>
+                                <li><a class = "dropdown-item" href = "login.html">Iniciar Sesión</a></li>
+                            </ul> 
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link disabled" href = "#" tabindex = "-1" aria-disabled = "true">Vaetics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class = "cabeceraIcon">
+            <img src = "../img/iconos/index/patreon.svg" alt = "icono patreon">
+            <h2> Bienvenido a nuestro portal de donación:</h2>
+        </section>
+        <div id = "cajaDonacion">
+            <h3>En que estarías contribuyendo?</h3>
+                <h4>Estarías contribuyendo a que nuestro servicio no se vea limitado a lo conseguido en publicidades <img src = "../img/iconos/donaciones/ahorros.svg" alt = "icono ahorrando"></h4>
+                <h4>Contratar personal nuevo para desarrollo de la plataforma <img src = "../img/iconos/donaciones/contrato.svg" alt = "icono contrato"></h4>
+            <h3>Que beneficio tendrías?</h3>
+                <h4>°Acceder a todo el material de vaetics <img src = "../img/iconos/donaciones/material.svg" alt = "icono libros"></h4>
+                <h4>°Acceso a sección guardados <img src = "../img/iconos/donaciones/guardados.svg" alt = "icono memoria sd"></h4>    
+                <h4>°borde de icono <img src = "../img/iconos/donaciones/borde.svg" alt = "icono borde"></h4>
+                <h4>°Mención especial en los vídeos <img src = "../img/iconos/donaciones/mencion.svg" alt = "icono blog"></h4>
+                </h4>
+            <div id = "botonDonacion">
+                <div id = "contenedorBoton" class="botonDonacion">
+                    <a href = "">
+                        <img src = "../img/iconos/donaciones/donacion.svg" alt = "icono corazon donación">
+                        seguir con la donación
+                    </a>
+                </div>    
+            </div>  
+        </div>
+        <form id = "formularioDonacion" action="" method="post" autocomplete="off">
+            <h3>Complete los siguientes campos para seguir con la donación</h3>
+            <br>
+            <div class = "mb-3" id = "cajaName">
+                <label for = "inputName" class = "form-label">Nombre y Apellido</label>
+                <input type = "text" class = "form-control" id = "inputName" aria-describedby = "nameHelp" name = "name" minlength="3" required>
+                <div id = "nameHelp" class = "form-text">Recuerda poner su nombre y apellido como aparece en su tarjeta</div>
+                <img id = "ayudaName" class = "imagenAyuda" src = "../img/donaciones/tarjetaName.png" alt = "">
+            </div>    
+            <div class = "mb-3">
+                <label for = "inputMonto" class = "form-label">Monto a donar</label>
+                <div class = "col-auto">
+                    <label class = "visually-hidden" for = "autoSizingInputGroup">Monto</label>
+                    <div class = "input-group">
+                        <div class = "input-group-text">US$</div>
+                        <select class = "form-select" id = "inputMonto" aria-label = "Default select example" name = "monto" required>
+                            <option value ="" selected disabled>Seleccione uno de los montos disponibles</option>
+                            <option value = "5">5</option>
+                            <option value = "10">10</option>
+                            <option value = "20">20</option>
+                        </select>  
+                    </div>
+                </div>
+                <div id = "montoHelp" class = "form-text"></div>
+            </div>
+            <div class = "mb-3" id = "cajaTarjeta">
+                <label for = "inputTarjeta" class = "form-label">Numero de Tarjeta</label>
+                <input type = "text" class = "form-control" id = "inputTarjeta" aria-describedby = "tarjetaHelp" name = "tarjeta" minlength="16" maxlength="16" required>
+                <div id = "tarjetaHelp" class = "form-text">16 dígitos</div>
+                <img id = "ayudaTarjeta" class = "imagenAyuda" src = "../img/donaciones/tarjetaTarjeta.png" alt = "">
+            </div>
+            <div class = "mb-3" id = "cajaCaducidad">
+                <label for = "inputCaducidad" class = "form-label">Fecha de Caducidad</label>
+                <input type = "text" class = "form-control" id = "inputCaducidad" aria-describedby = "caducidadHelp" name = "caducidad" minlength="4" maxlength="4" required>
+                <div id = "caducidadHelp" class = "form-text">formato mmaa sin espacios ni barras</div>
+                <img id = "ayudaCaducidad" class = "imagenAyuda" src = "../img/donaciones/tarjetaCaducidad.png" alt = "">
+            </div>
+            <div class = "mb-3" id = "cajaCodigo">
+                <label for = "inputCodigo" class = "form-label">Código de seguridad</label>
+                <input type = "text" class = "form-control" id = "inputCodigo" aria-describedby = "codigoHelp" name = "codigo" minlength="3" maxlength="3" required>
+                <div id = "codigoHelp" class = "form-text">3 dígitos</div>
+                <img id = "ayudaCodigo" class = "imagenAyuda" src = "../img/donaciones/tarjetaCodigo.png" alt = "">
+            </div>
+            <div class = "mb-3 form-check">
+                <input type = "checkbox" class = "form-check-input" id = "inputCheck" required>
+                <label class = "form-check-label" for = "inputCheck">Acepto los términos y condiciones</label>
+                <div id = "checkHelp" class = "form-text"></div>
+            </div>
+            <div class = "mb-3">
+                <button type = "submit" class = "btn btn-primary" id = "submit">Confirmar Donación</button>
+                <button type = "reset" class = "btn btn-primary" id = "reset">Limpiar Formulario</button>
+            </div>       
+        </form>
+    </main>
+    <div id = "pblcd">
+        <div id = "imgPblcd"></div>
+    </div>
+    <footer>
+        <div id = "suscribirse">
+          <img src = "../img/logos/vaetics.png" alt = "logo Vaetics" class = "logoVaetics">
+            <div id = "cajaSuscribirse">
+                <form action = "" id = "formularioSuscribirse">
+                    <input type = "email" placeholder = " ingrese su correo electrónico..." id = "mail" name="emailSuscribirse" required>
+                    <input type = "submit" value = "suscribirse" id = "submit">
+                </form>
+            </div>    
+        </div>
+        <div id = "administrar">
+            <a href = "politicasCookies.html"><h3>políticas de privacidad</h3></a>
+            <a href = "politicasCookies.html"><h3>gestión de cookies</h3></a>   
+        </div>
+    </footer>
+    <script src = "../js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src = "../js/enviarFormularios.js"></script>
+    <script type="module" src="../js/modules/validarForm.js"></script>
+    <script type = "module" src = "../js/procesoDeDonacion.js"></script>
+</body>
+</html>

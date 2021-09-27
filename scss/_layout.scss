@@ -1,0 +1,332 @@
+// clases globales
+.cabeceraIcon{
+    display: flex;
+    padding-top: $sizePadding;
+    img{
+        width: $sizeIcon;
+    }
+    h2{
+        margin-left: 1%;
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+#cabecera{
+    @include fondoCabecera;
+    #tituloCabecera{
+        padding-top: $sizeImageH/4;
+        h1{
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            vertical-align: text-bottom;
+            @include borderOfuscados;
+        } 
+    } 
+}
+main{
+    width: 95%;
+    margin-left: 2.5%;
+    // Index
+    #trending{
+        article{
+            .curiosidadesTrending{
+                padding-top: $sizePadding/2;
+                iframe{
+                    width: 100%;
+                    height: 50vw;
+                }
+                p{
+                    font-size: $sizeText;
+                    padding-top: $sizePadding/4;
+                }
+            }
+        }
+    }
+    #patreon{
+        padding-top: $sizePadding;
+        padding-bottom: $sizePadding;
+        article{
+            p{
+                padding-top: $sizePadding/4;
+                a{
+                    @include link;   
+                }
+            }
+        }
+    }
+    // Curiosidades
+    #contenidoCurio{
+        padding-bottom: $sizePadding;
+        a{
+            color: $themeTextColor;
+            .cajaCurio{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border: 1px solid gray;
+                margin-top: $sizePadding/2;
+                -webkit-box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 22px -4px rgba(0,0,0,0.75);
+                img{
+                    width: $sizeImageW/3;
+                    height: $sizeImageH/6;
+                }
+                p{
+                    width: 67%;
+                    padding-left: $sizePadding/6;
+                }
+            }
+            .cajaCurio:hover{
+                transform: scale(1.02,1.02);
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border: 1px solid black;
+                -webkit-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 22px -15px rgba(0,0,0,0.75);
+            }
+        }
+    }
+    // Guardado
+    #errorAuten{
+        display: flex;
+        flex-direction: column;
+        padding-top: $sizePadding;
+        padding-bottom: $sizePadding;
+        .buttonAuten{
+            display: flex;
+            padding-top: $sizePadding/3;
+            .buttonLogin{
+                @include button; 
+            }
+        }
+    }
+    // Sobre Nosotros
+    #descripcionVaetics{
+        padding-top: $sizePadding;
+        padding-bottom: $sizePadding;
+        h4{
+            padding-top: $sizePadding/2;
+        }
+        iframe{
+            width: 70%;
+            height: 30vw;
+        }
+    }
+    #contacto{
+        padding-bottom: $sizePadding;
+        form{
+            .buttonContacto{
+                @include button;
+            }
+        }
+    }
+    // paginas de curiosidades
+    #cabeceraPaginaCuriosidades{
+        display: flex;
+        flex-direction: column;
+        padding-top: $sizePadding;
+        a{
+            img{
+                width: $sizeIcon*4;
+                padding: $sizePadding/6 $sizePadding/2 $sizePadding/6 0;
+            }
+        }
+        h2{
+            padding-top: $sizePadding/4;
+            margin-left: 1%;
+        }
+    }
+    #piePaginaCuriosidades{
+        a{
+            img{
+                width: $sizeIcon*4;
+                padding: $sizePadding/6 $sizePadding/2 $sizePadding/6 0;
+            }
+        }
+    }
+    #cuerpoCurio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: $sizePadding/2;
+        .imgCuriosidadDesktop{
+            display: none;
+        }
+        .imgCuriosidadMobile{
+            display: block;
+        }
+        img{
+            width: $sizeImageTW;
+            height: $sizeImageTH;
+        }
+        p{
+            padding-top: $sizePadding/2;
+            padding-bottom: $sizePadding/2;
+        }
+    }
+    /*Donaciones*/
+    #cajaDonacion{
+        padding: $sizePadding 0;
+        h3{
+            font-weight: bold;
+            padding: $sizePadding/2 0;
+        }
+        h4{
+            padding: $sizePadding/3 0;
+            img{
+                width: $sizeIcon;
+            }
+            a{
+                @include link;
+            }
+        }
+        #botonDonacion{
+            padding-top: 50px;
+            #contenedorBoton{
+                img{
+                    width: 40px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 20px 25px;
+                    border: 1px solid black;
+                    border-radius: 100px;
+                }
+                a:hover{
+                    padding: 20px 30px 20px 90px;
+                    transition-duration: 0.4s;
+                }
+            } 
+            h4{
+                padding: 20px;
+                width: 98%;
+                border: 1px solid black;
+                border-radius: 10px;
+                img{
+                    width: 40px;
+                }
+            }
+            h5{
+                font-size: 14px;
+            }
+        }
+    }
+    #formularioDonacion{
+        display: none;
+        div{
+            .imagenAyuda{
+                display: none;
+                width: 350px;
+            }
+        }
+    }
+}
+#bodyLogin{
+    display: flex;
+    // Login/Registro
+    #formulario{
+        display: flex;
+        height: 100%;
+        #login{   
+            min-width: 370px;
+            height: 100%;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            @include form;
+        }
+        #registro{
+            min-width: 370px;
+            height: 100%;
+            padding-left: 10px;
+            display: none;
+            @include form;
+        }
+        #portadaLogin{
+            display: none;
+        }
+    }
+}
+#pblcd{
+    height: auto;
+    width: $sizeImageTW;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(19, 19, 19);
+    #imgPblcd{
+    background-image: url('../img/pblcd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    }
+}
+footer{
+    border-top: 1px solid black;
+    margin-top: $sizePadding;
+    display: flex;
+    color: $themeTextColor;
+    background-color: $themeBackgroundColor;
+    #suscribirse{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-top: $sizePadding/2;
+        padding-bottom: $sizePadding/4;
+        #cajaSuscribirse{
+            padding: $sizePadding/6;
+            form{
+                display: flex;
+                flex-direction: column;
+                ::placeholder { 
+                    color: $lightMen; 
+                }
+                #mail{
+                    color: $themeTextColor;
+                    background-color: $themeBackgroundColor;
+                    border: 1px solid black;
+                    width: 200px;
+                }
+                #submit{
+                    color: $themeTextColor;
+                    background-color: $themeBackgroundColor;
+                    border: 1px solid black;
+                    width: 100px;
+                    margin-top: $sizePadding/6;
+                }
+            }
+        }
+        .logoVaetics{
+            width: $sizeIcon*4;
+        }
+    }
+    #administrar{
+        width: 30%;
+        padding: $sizePadding/4;
+        a{
+            color: $themeTextColor;
+            padding: 10px;
+            text-align: center;
+        }
+        h3{
+            border-radius: 10px;
+            font-size: $sizeText;
+            margin-top: $sizePadding/3;
+        }
+        h3:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+    }
+}
